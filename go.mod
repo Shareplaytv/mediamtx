@@ -2,6 +2,14 @@ module github.com/bluenviron/mediamtx
 
 go 1.21
 
+replace (
+	github.com/bluenviron/gohlslib => ../gortsplib
+	github.com/bluenviron/gohlslib/pkg/codecs => ../gohlslib
+	github.com/bluenviron/gohlslib/pkg/storage => ../gohlslib
+	github.com/bluenviron/gohlslib/pkg/playlist => ../gohlslib
+	github.com/bluenviron/gohlslib/pkg/codecparams => ../gohlslib
+)
+
 require (
 	code.cloudfoundry.org/bytefmt v0.0.0
 	github.com/abema/go-mp4 v1.1.1
